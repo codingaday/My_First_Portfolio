@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Basics</title>
+    <style>
+      table {
+        width: 30%;
+        border-collapse: collapse; /*To  merge cell borders to avoid double lines */
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -62,6 +82,38 @@
           Interested in my latest updates?
           <a href="tweets.html">tweets!</a>
         </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Emily</td>
+              <td>28</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>32</td>
+              <td>Australia</td>
+            </tr>
+            <tr>
+              <td>Sophia</td>
+              <td>21</td>
+              <td>uk</td>
+            </tr>
+          </tbody>
+        </table>
       </article>
       <aside><p>placeholder to add comment thread later</p></aside>
     </main>
